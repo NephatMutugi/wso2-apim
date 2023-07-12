@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><artifact name="LoansInquiry_SOAP_ENDPOINT" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+    <file>LoansInquiry_SOAP_ENDPOINT-1.0.0.xml</file>
+</artifact>

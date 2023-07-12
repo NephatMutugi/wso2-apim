@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint name="LoansInquiry_SOAP_ENDPOINT" xmlns="http://ws.apache.org/ns/synapse">
+    <wsdl port="CustomerManagerSpi" service="CustomerManagerSpiService" uri="http://tz-uat-app-fcr1.tz.af.absa.local:9080/services/services/CustomerManagerSpi?wsdl">
+        <suspendOnFailure>
+            <initialDuration>-1</initialDuration>
+            <progressionFactor>1</progressionFactor>
+        </suspendOnFailure>
+        <markForSuspension>
+            <retriesBeforeSuspension>0</retriesBeforeSuspension>
+        </markForSuspension>
+    </wsdl>
+</endpoint>

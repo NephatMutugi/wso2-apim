@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="LoansInquiryCompositeExporter" version="1.0.0" type="carbon/application">
+        <dependency artifact="LoansInquiry" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="LoansInquiry_SOAP_ENDPOINT" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+    </artifact>
+</artifacts>
