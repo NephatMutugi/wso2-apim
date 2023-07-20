@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="LoansInquiry_SOAP_ENDPOINT" groupId="com.nbc.loans.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/LoansInquiry_SOAP_ENDPOINT.xml</file>
+    </artifact>
+    <artifact name="LoansInquiry" groupId="com.nbc.loans.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/LoansInquiry.xml</file>
+    </artifact>
+    <artifact name="LoansInquiry_swagger" groupId="com.nbc.loans.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/LoansInquiry_swagger.yaml</file>
+    </artifact>
+    <artifact name="LoansInquiry_metadata" groupId="com.nbc.loans.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/LoansInquiry_metadata.yaml</file>
+    </artifact>
+</artifacts>

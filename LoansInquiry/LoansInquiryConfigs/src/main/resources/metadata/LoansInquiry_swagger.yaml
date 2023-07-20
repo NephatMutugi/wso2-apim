@@ -1,0 +1,2941 @@
+openapi: 3.0.1
+info:
+  title: LoansInquiry
+  description: API Definition of LoansInquiry
+  version: 1.0.0
+servers:
+- url: /default
+paths:
+  /createESaverCustomer:
+    post:
+      operationId: createESaverCustomer
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              type: object
+              properties:
+                createESaverCustomer:
+                  $ref: '#/components/schemas/rootElement_createESaverCustomer'
+        required: true
+      responses:
+        default:
+          description: Default Description
+          content:
+            '*/*':
+              schema:
+                type: object
+                properties:
+                  createESaverCustomerResponse:
+                    $ref: '#/components/schemas/createESaverCustomerResponse'
+      x-wso2-soap:
+        soap-action: ''
+        x-soap-message-type: document
+        soap-operation: createESaverCustomer
+        namespace: http://spi.customer.app.fcr.iflex.com
+        x-soap-version: '1.1'
+  /updateCustomerUDF:
+    post:
+      operationId: updateCustomerUDF
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              type: object
+              properties:
+                updateCustomerUDF:
+                  $ref: '#/components/schemas/rootElement_updateCustomerUDF'
+        required: true
+      responses:
+        default:
+          description: Default Description
+          content:
+            '*/*':
+              schema:
+                type: object
+                properties:
+                  updateCustomerUDFResponse:
+                    $ref: '#/components/schemas/updateCustomerUDFResponse'
+      x-wso2-soap:
+        soap-action: ''
+        x-soap-message-type: document
+        soap-operation: updateCustomerUDF
+        namespace: http://spi.customer.app.fcr.iflex.com
+        x-soap-version: '1.1'
+  /inquire:
+    post:
+      operationId: inquire
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              type: object
+              properties:
+                inquire:
+                  $ref: '#/components/schemas/rootElement_inquire'
+        required: true
+      responses:
+        default:
+          description: Default Description
+          content:
+            '*/*':
+              schema:
+                type: object
+                properties:
+                  inquireResponse:
+                    $ref: '#/components/schemas/inquireResponse'
+      x-wso2-soap:
+        soap-action: ''
+        x-soap-message-type: document
+        soap-operation: inquire
+        namespace: http://spi.customer.app.fcr.iflex.com
+        x-soap-version: '1.1'
+  /modifyRBACustomer:
+    post:
+      operationId: modifyRBACustomer
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              type: object
+              properties:
+                modifyRBACustomer:
+                  $ref: '#/components/schemas/rootElement_modifyRBACustomer'
+        required: true
+      responses:
+        default:
+          description: Default Description
+          content:
+            '*/*':
+              schema:
+                type: object
+                properties:
+                  modifyRBACustomerResponse:
+                    $ref: '#/components/schemas/modifyRBACustomerResponse'
+      x-wso2-soap:
+        soap-action: ''
+        x-soap-message-type: document
+        soap-operation: modifyRBACustomer
+        namespace: http://spi.customer.app.fcr.iflex.com
+        x-soap-version: '1.1'
+  /listAccountsOfCustomer:
+    post:
+      operationId: listAccountsOfCustomer
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              type: object
+              properties:
+                listAccountsOfCustomer:
+                  $ref: '#/components/schemas/rootElement_listAccountsOfCustomer'
+        required: true
+      responses:
+        default:
+          description: Default Description
+          content:
+            '*/*':
+              schema:
+                type: object
+                properties:
+                  listAccountsOfCustomerResponse:
+                    $ref: '#/components/schemas/listAccountsOfCustomerResponse'
+      x-wso2-soap:
+        soap-action: ''
+        x-soap-message-type: document
+        soap-operation: listAccountsOfCustomer
+        namespace: http://spi.customer.app.fcr.iflex.com
+        x-soap-version: '1.1'
+  /inquireRBA:
+    post:
+      operationId: inquireRBA
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              type: object
+              properties:
+                inquireRBA:
+                  $ref: '#/components/schemas/rootElement_inquireRBA'
+        required: true
+      responses:
+        default:
+          description: Default Description
+          content:
+            '*/*':
+              schema:
+                type: object
+                properties:
+                  inquireRBAResponse:
+                    $ref: '#/components/schemas/inquireRBAResponse'
+      x-wso2-soap:
+        soap-action: ''
+        x-soap-message-type: document
+        soap-operation: inquireRBA
+        namespace: http://spi.customer.app.fcr.iflex.com
+        x-soap-version: '1.1'
+  /inquireGroupWalletCustomer:
+    post:
+      operationId: inquireGroupWalletCustomer
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              type: object
+              properties:
+                inquireGroupWalletCustomer:
+                  $ref: '#/components/schemas/rootElement_inquireGroupWalletCustomer'
+        required: true
+      responses:
+        default:
+          description: Default Description
+          content:
+            '*/*':
+              schema:
+                type: object
+                properties:
+                  inquireGroupWalletCustomerResponse:
+                    $ref: '#/components/schemas/inquireGroupWalletCustomerResponse'
+      x-wso2-soap:
+        soap-action: ''
+        x-soap-message-type: document
+        soap-operation: inquireGroupWalletCustomer
+        namespace: http://spi.customer.app.fcr.iflex.com
+        x-soap-version: '1.1'
+  /changeCustomerIdentificationDetails:
+    post:
+      operationId: changeCustomerIdentificationDetails
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              type: object
+              properties:
+                changeCustomerIdentificationDetails:
+                  $ref: '#/components/schemas/rootElement_changeCustomerIdentificationDetails'
+        required: true
+      responses:
+        default:
+          description: Default Description
+          content:
+            '*/*':
+              schema:
+                type: object
+                properties:
+                  changeCustomerIdentificationDetailsResponse:
+                    $ref: '#/components/schemas/changeCustomerIdentificationDetailsResponse'
+      x-wso2-soap:
+        soap-action: ''
+        x-soap-message-type: document
+        soap-operation: changeCustomerIdentificationDetails
+        namespace: http://spi.customer.app.fcr.iflex.com
+        x-soap-version: '1.1'
+  /addRBACustomerDetails:
+    post:
+      operationId: addRBACustomerDetails
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              type: object
+              properties:
+                addRBACustomerDetails:
+                  $ref: '#/components/schemas/rootElement_addRBACustomerDetails'
+        required: true
+      responses:
+        default:
+          description: Default Description
+          content:
+            '*/*':
+              schema:
+                type: object
+                properties:
+                  addRBACustomerDetailsResponse:
+                    $ref: '#/components/schemas/addRBACustomerDetailsResponse'
+      x-wso2-soap:
+        soap-action: ''
+        x-soap-message-type: document
+        soap-operation: addRBACustomerDetails
+        namespace: http://spi.customer.app.fcr.iflex.com
+        x-soap-version: '1.1'
+  /doDedupCustomerSearch:
+    post:
+      operationId: doDedupCustomerSearch
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              type: object
+              properties:
+                doDedupCustomerSearch:
+                  $ref: '#/components/schemas/rootElement_doDedupCustomerSearch'
+        required: true
+      responses:
+        default:
+          description: Default Description
+          content:
+            '*/*':
+              schema:
+                type: object
+                properties:
+                  doDedupCustomerSearchResponse:
+                    $ref: '#/components/schemas/doDedupCustomerSearchResponse'
+      x-wso2-soap:
+        soap-action: ''
+        x-soap-message-type: document
+        soap-operation: doDedupCustomerSearch
+        namespace: http://spi.customer.app.fcr.iflex.com
+        x-soap-version: '1.1'
+  /doAdvancedCustomerSearch:
+    post:
+      operationId: doAdvancedCustomerSearch
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              type: object
+              properties:
+                doAdvancedCustomerSearch:
+                  $ref: '#/components/schemas/rootElement_doAdvancedCustomerSearch'
+        required: true
+      responses:
+        default:
+          description: Default Description
+          content:
+            '*/*':
+              schema:
+                type: object
+                properties:
+                  doAdvancedCustomerSearchResponse:
+                    $ref: '#/components/schemas/doAdvancedCustomerSearchResponse'
+      x-wso2-soap:
+        soap-action: ''
+        x-soap-message-type: document
+        soap-operation: doAdvancedCustomerSearch
+        namespace: http://spi.customer.app.fcr.iflex.com
+        x-soap-version: '1.1'
+  /modifyCustomer:
+    post:
+      operationId: modifyCustomer
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              type: object
+              properties:
+                modifyCustomer:
+                  $ref: '#/components/schemas/rootElement_modifyCustomer'
+        required: true
+      responses:
+        default:
+          description: Default Description
+          content:
+            '*/*':
+              schema:
+                type: object
+                properties:
+                  modifyCustomerResponse:
+                    $ref: '#/components/schemas/modifyCustomerResponse'
+      x-wso2-soap:
+        soap-action: ''
+        x-soap-message-type: document
+        soap-operation: modifyCustomer
+        namespace: http://spi.customer.app.fcr.iflex.com
+        x-soap-version: '1.1'
+  /listCASAAccountsOfCustomerAUS:
+    post:
+      operationId: listCASAAccountsOfCustomerAUS
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              type: object
+              properties:
+                listCASAAccountsOfCustomerAUS:
+                  $ref: '#/components/schemas/rootElement_listCASAAccountsOfCustomerAUS'
+        required: true
+      responses:
+        default:
+          description: Default Description
+          content:
+            '*/*':
+              schema:
+                type: object
+                properties:
+                  listCASAAccountsOfCustomerAUSResponse:
+                    $ref: '#/components/schemas/listCASAAccountsOfCustomerAUSResponse'
+      x-wso2-soap:
+        soap-action: ''
+        x-soap-message-type: document
+        soap-operation: listCASAAccountsOfCustomerAUS
+        namespace: http://spi.customer.app.fcr.iflex.com
+        x-soap-version: '1.1'
+  /addCustomer:
+    post:
+      operationId: addCustomer
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              type: object
+              properties:
+                addCustomer:
+                  $ref: '#/components/schemas/rootElement_addCustomer'
+        required: true
+      responses:
+        default:
+          description: Default Description
+          content:
+            '*/*':
+              schema:
+                type: object
+                properties:
+                  addCustomerResponse:
+                    $ref: '#/components/schemas/addCustomerResponse'
+      x-wso2-soap:
+        soap-action: ''
+        x-soap-message-type: document
+        soap-operation: addCustomer
+        namespace: http://spi.customer.app.fcr.iflex.com
+        x-soap-version: '1.1'
+components:
+  schemas:
+    ExtendedReply:
+      type: object
+      properties:
+        messages:
+          $ref: '#/components/schemas/ArrayOf_tns6_ReplyMessage'
+      xml:
+        namespace: http://exception.infra.fcr.iflex.com
+      x-namespace-qualified: false
+    OLTPException:
+      type: object
+      properties:
+        ExtensionObject:
+          $ref: '#/components/schemas/FCRException'
+      xml:
+        namespace: http://exception.infra.fcr.iflex.com
+      x-namespace-qualified: false
+    ArrayOf_tns6_ReplyMessage:
+      type: object
+      properties:
+        item:
+          type: array
+          items:
+            $ref: '#/components/schemas/ReplyMessage'
+      xml:
+        namespace: http://exception.infra.fcr.iflex.com
+      x-namespace-qualified: false
+    FCRException:
+      type: object
+      properties:
+        errorCode:
+          type: string
+      xml:
+        namespace: http://exception.infra.fcr.iflex.com
+      x-namespace-qualified: false
+    ReplyMessage:
+      type: object
+      properties:
+        code:
+          $ref: '#/components/schemas/ReplyMessageType'
+        message:
+          type: string
+      xml:
+        namespace: http://exception.infra.fcr.iflex.com
+      x-namespace-qualified: false
+    FatalException:
+      type: object
+      properties:
+        ExtensionObject:
+          $ref: '#/components/schemas/OLTPException'
+      xml:
+        namespace: http://exception.infra.fcr.iflex.com
+      x-namespace-qualified: false
+    ArrayOf_tns9_Signatory:
+      type: object
+      properties:
+        item:
+          type: array
+          items:
+            $ref: '#/components/schemas/Signatory'
+      xml:
+        namespace: http://customer.entity.fcr.iflex.com
+      x-namespace-qualified: false
+    Phonetic:
+      type: object
+      properties:
+        firstName:
+          type: string
+        fullName:
+          type: string
+        middleName:
+          type: string
+      xml:
+        namespace: http://customer.entity.fcr.iflex.com
+      x-namespace-qualified: false
+    CustomerBankRelationship:
+      type: object
+      properties:
+        bankCode:
+          type: integer
+          format: int32
+        datOpen:
+          $ref: '#/components/schemas/Date'
+        homeBranchCode:
+          type: integer
+          format: int32
+        profile:
+          type: string
+      xml:
+        namespace: http://customer.entity.fcr.iflex.com
+      x-namespace-qualified: false
+    Signatory:
+      type: object
+      properties:
+        designation:
+          type: string
+        directorName:
+          type: string
+        signatoryName:
+          type: string
+      xml:
+        namespace: http://customer.entity.fcr.iflex.com
+      x-namespace-qualified: false
+    Membership:
+      type: object
+      properties:
+        isMember:
+          type: boolean
+        number:
+          type: string
+      xml:
+        namespace: http://customer.entity.fcr.iflex.com
+      x-namespace-qualified: false
+    KYCDetails:
+      type: object
+      properties:
+        currentRiskLevel:
+          $ref: '#/components/schemas/RiskLevel'
+        manualKYCCompliant:
+          type: boolean
+        numberOfAccounts:
+          $ref: '#/components/schemas/NumberOfAccountsDTO'
+        sysKYCCompliant:
+          type: boolean
+      xml:
+        namespace: http://dto.spi.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    CustomerGroupWalletInquiryDTO:
+      type: object
+      properties:
+        ExtensionObject:
+          $ref: '#/components/schemas/BaseResponse'
+      xml:
+        namespace: http://dto.spi.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    CustomerDataDTO:
+      type: object
+      properties:
+        birthDate:
+          type: string
+        category:
+          type: string
+        countryOfRes:
+          type: string
+        customerMIS:
+          $ref: '#/components/schemas/CustomerMIS'
+        customerStatus:
+          type: string
+        customerUDF:
+          $ref: '#/components/schemas/CustomerUDF'
+        designation:
+          type: string
+        email:
+          type: string
+        employeeID:
+          type: string
+        faxNumber:
+          type: string
+        gender:
+          type: string
+        homeAddress:
+          $ref: '#/components/schemas/Address'
+        homeBranchCode:
+          type: integer
+          format: int32
+        homePhone:
+          $ref: '#/components/schemas/Phone'
+        incomeCategory:
+          type: string
+        language:
+          type: string
+        limitCcy:
+          type: string
+        localGlobalType:
+          $ref: '#/components/schemas/LocalGlobalType'
+        mailingAddress:
+          $ref: '#/components/schemas/Address'
+        maritalStatus:
+          $ref: '#/components/schemas/MaritalStatusType'
+        mobileNumber:
+          $ref: '#/components/schemas/Phone'
+        name:
+          $ref: '#/components/schemas/Name'
+        nationalIdentificationCode:
+          type: string
+        nationality:
+          type: string
+        officePhone:
+          $ref: '#/components/schemas/Phone'
+        phone:
+          $ref: '#/components/schemas/Phone'
+        professionCode:
+          type: integer
+          format: int32
+        staff:
+          type: boolean
+      xml:
+        namespace: http://dto.spi.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    NewIndividualDTO:
+      type: object
+      properties:
+        ageOfRetirement:
+          type: integer
+          format: int32
+        amlRiskRating:
+          type: string
+        brnIssue:
+          type: string
+        businessCodeCategory:
+          type: integer
+          format: int32
+        category:
+          type: string
+        countryOfResidence:
+          type: string
+        customerEducation:
+          $ref: '#/components/schemas/EducationType'
+        customerMobilePhone:
+          type: string
+        datCIV:
+          type: string
+        datIssueId:
+          type: string
+        dateOfBirthOrRegistration:
+          type: string
+        designation:
+          type: string
+        emailId:
+          type: string
+        employeeId:
+          type: string
+        employerAddress:
+          $ref: '#/components/schemas/Address'
+        employerEmailId:
+          type: string
+        employerFaxNo:
+          type: string
+        employerMobileNo:
+          type: string
+        employerName:
+          type: string
+        employerPhoneNo:
+          type: string
+        employerTelex:
+          type: string
+        fax:
+          type: string
+        flgInterTransaction:
+          type: string
+        flgPep:
+          type: string
+        homeBranchCode:
+          type: integer
+          format: int32
+        icType:
+          type: string
+        incomeSlabCode:
+          type: string
+        incomeTaxNo:
+          type: string
+        isStaff:
+          type: string
+        issueAuthId:
+          type: string
+        language:
+          type: string
+        mailingAddress:
+          $ref: '#/components/schemas/Address'
+        maritalStatus:
+          $ref: '#/components/schemas/MaritalStatusType'
+        misDetails:
+          $ref: '#/components/schemas/ArrayOf_tns13_MIS'
+        name:
+          $ref: '#/components/schemas/Name'
+        nationalIdentificationCode:
+          type: string
+        nationality:
+          type: string
+        noOfYearsInJob:
+          type: integer
+          format: int32
+        occupation:
+          type: string
+        officePhoneNo:
+          type: string
+        origin:
+          $ref: '#/components/schemas/EthnicOriginType'
+        permanentAddress:
+          $ref: '#/components/schemas/Address'
+        phone:
+          type: string
+        placeOfBirth:
+          type: string
+        professionCode:
+          type: integer
+          format: int32
+        relation:
+          type: string
+        sex:
+          $ref: '#/components/schemas/SexType'
+        signatureType:
+          type: string
+        sourceOfFunds:
+          type: string
+        marketingOptOut:
+          type: string
+        marketingOptOutEmail:
+          type: string
+        marketingOptOutMail:
+          type: string
+        marketingOptOutPhone:
+          type: string
+        marketingOptOutSMS:
+          type: string
+        objectionToProcessing:
+          type: string
+        objectionToProfiling:
+          type: string
+        preferedContact:
+          type: string
+      xml:
+        namespace: http://dto.spi.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    DoDedupCustomerSearchResponse:
+      type: object
+      properties:
+        ExtensionObject:
+          $ref: '#/components/schemas/BaseResponse'
+      xml:
+        namespace: http://dto.spi.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    RBACustomerMaintenanceDTO:
+      type: object
+      properties:
+        cntCashDepTxn:
+          type: integer
+          format: int32
+        cntCashWdrTxn:
+          type: integer
+          format: int32
+        cntChqDepTxn:
+          type: integer
+          format: int32
+        cntChqWdrTxn:
+          type: integer
+          format: int32
+        cntFundsTransferDepTxn:
+          type: integer
+          format: int32
+        cntFundsTransferWdrTxn:
+          type: integer
+          format: int32
+        cntOtherInstrumentsDepTxn:
+          type: integer
+          format: int32
+        cntOtherInstrumentsWdrTxn:
+          type: integer
+          format: int32
+        codClassFatca:
+          type: number
+          format: float
+        codCntryTrdWith1:
+          type: string
+        codCntryTrdWith10:
+          type: string
+        codCntryTrdWith2:
+          type: string
+        codCntryTrdWith3:
+          type: string
+        codCntryTrdWith4:
+          type: string
+        codCntryTrdWith5:
+          type: string
+        codCntryTrdWith6:
+          type: string
+        codCntryTrdWith7:
+          type: string
+        codCntryTrdWith8:
+          type: string
+        codCntryTrdWith9:
+          type: string
+        codCustTypSpecl:
+          type: number
+          format: float
+        codRiskActivity:
+          type: number
+          format: float
+        customerId:
+          type: integer
+          format: int64
+        dtls:
+          $ref: '#/components/schemas/ArrayOf_tns13_RBACustomerCRSDetails'
+        flgPep:
+          type: string
+        funds:
+          $ref: '#/components/schemas/SrcOfFunds'
+        giinCrs:
+          type: string
+        incomes:
+          $ref: '#/components/schemas/SrcOfIncome'
+        isoCntryTaxResiCrs:
+          type: string
+        onboardingChnl:
+          type: number
+          format: float
+        reasonCrs:
+          type: string
+        srcOfFundsOther:
+          type: string
+        srcOfIncomeOther:
+          type: string
+        srcOfWealthOther:
+          type: string
+        tinCrs:
+          type: string
+        valCashDepTxn:
+          type: number
+          format: float
+        valCashWdrTxn:
+          type: number
+          format: float
+        valChqDepTxn:
+          type: number
+          format: float
+        valChqWdrTxn:
+          type: number
+          format: float
+        valFundsTransferDepTxn:
+          type: number
+          format: float
+        valFundsTransferWdrTxn:
+          type: number
+          format: float
+        valOtherInstrumentsDepTxn:
+          type: number
+          format: float
+        valOtherInstrumentsWdrTxn:
+          type: number
+          format: float
+        wealths:
+          $ref: '#/components/schemas/SrcOfWealth'
+      xml:
+        namespace: http://dto.spi.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    CustomerSearchResponse:
+      type: object
+      properties:
+        accountStatus:
+          type: string
+        customerResultDTO:
+          $ref: '#/components/schemas/ArrayOf_tns3_SearchCustomerResultDTO'
+        hasInternetBankingFacility:
+          type: boolean
+        hasMoreResults:
+          type: boolean
+        numberOfRecords:
+          type: integer
+          format: int64
+        productGroup:
+          type: string
+        status:
+          $ref: '#/components/schemas/TransactionStatus'
+      xml:
+        namespace: http://dto.spi.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    ArrayOf_tns13_RBACustomerCRSDetails:
+      type: object
+      properties:
+        item:
+          type: array
+          items:
+            $ref: '#/components/schemas/RBACustomerCRSDetails'
+      xml:
+        namespace: http://dto.spi.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    MIS:
+      type: object
+      properties:
+        code:
+          type: string
+        type:
+          $ref: '#/components/schemas/MISType'
+      xml:
+        namespace: http://dto.spi.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    SrcOfWealth:
+      type: object
+      properties:
+        codSrcOfWealth1:
+          type: number
+          format: float
+        codSrcOfWealth10:
+          type: number
+          format: float
+        codSrcOfWealth2:
+          type: number
+          format: float
+        codSrcOfWealth3:
+          type: number
+          format: float
+        codSrcOfWealth4:
+          type: number
+          format: float
+        codSrcOfWealth5:
+          type: number
+          format: float
+        codSrcOfWealth6:
+          type: number
+          format: float
+        codSrcOfWealth7:
+          type: number
+          format: float
+        codSrcOfWealth8:
+          type: number
+          format: float
+        codSrcOfWealth9:
+          type: number
+          format: float
+      xml:
+        namespace: http://dto.spi.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    CustomerMaintenanceDTO:
+      type: object
+      properties:
+        ageOfRetirement:
+          type: integer
+          format: int32
+        amlRiskRating:
+          type: string
+        brnIssue:
+          type: string
+        businessCodeCategory:
+          type: integer
+          format: int32
+        countryOfResidence:
+          type: string
+        customerEducation:
+          $ref: '#/components/schemas/EducationType'
+        customerId:
+          type: integer
+          format: int64
+        customerMobilePhone:
+          type: string
+        datCIV:
+          type: string
+        datIssueId:
+          type: string
+        dateOfBirthOrRegistration:
+          type: string
+        designation:
+          type: string
+        emailId:
+          type: string
+        employeeId:
+          type: string
+        employerAddress:
+          $ref: '#/components/schemas/Address'
+        employerEmailId:
+          type: string
+        employerFaxNo:
+          type: string
+        employerMobileNo:
+          type: string
+        employerName:
+          type: string
+        employerPhoneNo:
+          type: string
+        employerTelex:
+          type: string
+        fax:
+          type: string
+        flgInterTransaction:
+          type: string
+        flgPep:
+          type: string
+        incomeSlabCode:
+          type: string
+        incomeTaxNo:
+          type: string
+        isStaff:
+          type: string
+        issueAuthId:
+          type: string
+        language:
+          type: string
+        mailingAddress:
+          $ref: '#/components/schemas/Address'
+        maritalStatus:
+          $ref: '#/components/schemas/MaritalStatusType'
+        misDetails:
+          $ref: '#/components/schemas/ArrayOf_tns13_MIS'
+        nationality:
+          type: string
+        noOfYearsInJob:
+          type: integer
+          format: int32
+        occupation:
+          type: string
+        officePhoneNo:
+          type: string
+        origin:
+          $ref: '#/components/schemas/RaceType'
+        permanentAddress:
+          $ref: '#/components/schemas/Address'
+        phone:
+          type: string
+        placeOfBirth:
+          type: string
+        prefix:
+          type: string
+        professionCode:
+          type: integer
+          format: int32
+        sex:
+          $ref: '#/components/schemas/SexType'
+        signatureType:
+          type: string
+        sourceOfFunds:
+          type: string
+        dataDeletion:
+          type: string
+        marketingOptOut:
+          type: string
+        marketingOptOutEmail:
+          type: string
+        marketingOptOutMail:
+          type: string
+        marketingOptOutPhone:
+          type: string
+        marketingOptOutSMS:
+          type: string
+        objectionToProcessing:
+          type: string
+        objectionToProfiling:
+          type: string
+        preferedContact:
+          type: string
+        updateCorrectionOfData:
+          type: string
+      xml:
+        namespace: http://dto.spi.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    TransactionResponse:
+      type: object
+      properties:
+        ExtensionObject:
+          $ref: '#/components/schemas/BaseResponse'
+      xml:
+        namespace: http://dto.spi.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    CustomerMIS:
+      type: object
+      properties:
+        barclaysIndustrialClassification:
+          type: string
+        centralBankIndustrialClassification:
+          type: string
+        costCenter:
+          type: string
+        customerRiskStatus:
+          type: string
+        customerSegment:
+          type: string
+        department:
+          type: string
+        profitCenter:
+          type: string
+        relationManagerCode:
+          type: string
+      xml:
+        namespace: http://dto.spi.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    CustomerUDF:
+      type: object
+      properties:
+        complexStructure:
+          type: string
+        dispensation:
+          type: string
+        employerName:
+          type: string
+        employmentType:
+          type: string
+        entityBranch1:
+          type: string
+        entityLegalType:
+          type: string
+        entityType:
+          type: string
+        expTransCountry1:
+          type: string
+        expTransCountry2:
+          type: string
+        expTransCountry3:
+          type: string
+        kycDate:
+          type: string
+        kycProcessAdopted:
+          type: string
+        kycStatus:
+          type: string
+        passExpDate:
+          type: string
+        passportNumber:
+          type: string
+        pepAccount:
+          type: string
+        resAddressLine1:
+          type: string
+        resAddressLine2:
+          type: string
+        resAddressLine3:
+          type: string
+        resAddressLine4:
+          type: string
+        residentMarker:
+          type: string
+        shareholdPercentage:
+          type: string
+        visaExpDate:
+          type: string
+        visaNumber:
+          type: string
+      xml:
+        namespace: http://dto.spi.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    SrcOfIncome:
+      type: object
+      properties:
+        codSrcOfIncome1:
+          type: number
+          format: float
+        codSrcOfIncome10:
+          type: number
+          format: float
+        codSrcOfIncome2:
+          type: number
+          format: float
+        codSrcOfIncome3:
+          type: number
+          format: float
+        codSrcOfIncome4:
+          type: number
+          format: float
+        codSrcOfIncome5:
+          type: number
+          format: float
+        codSrcOfIncome6:
+          type: number
+          format: float
+        codSrcOfIncome7:
+          type: number
+          format: float
+        codSrcOfIncome8:
+          type: number
+          format: float
+        codSrcOfIncome9:
+          type: number
+          format: float
+      xml:
+        namespace: http://dto.spi.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    AddCustomerResponse:
+      type: object
+      properties:
+        ExtensionObject:
+          $ref: '#/components/schemas/BaseResponse'
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    RBACustomerCRSDetails:
+      type: object
+      properties:
+        cntrlPersonTyp:
+          type: number
+          format: float
+        datBirthPerson:
+          type: string
+        namPersonCity:
+          type: string
+        namPersonCntry:
+          type: string
+        namPersonFirst:
+          type: string
+        namPersonLast:
+          type: string
+        taxIdCntry:
+          type: string
+        taxIdNumber:
+          type: string
+      xml:
+        namespace: http://dto.spi.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    SrcOfFunds:
+      type: object
+      properties:
+        codSrcOfFunds1:
+          type: number
+          format: float
+        codSrcOfFunds10:
+          type: number
+          format: float
+        codSrcOfFunds2:
+          type: number
+          format: float
+        codSrcOfFunds3:
+          type: number
+          format: float
+        codSrcOfFunds4:
+          type: number
+          format: float
+        codSrcOfFunds5:
+          type: number
+          format: float
+        codSrcOfFunds6:
+          type: number
+          format: float
+        codSrcOfFunds7:
+          type: number
+          format: float
+        codSrcOfFunds8:
+          type: number
+          format: float
+        codSrcOfFunds9:
+          type: number
+          format: float
+      xml:
+        namespace: http://dto.spi.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    NumberOfAccountsDTO:
+      type: object
+      properties:
+        noOfCurrentAccount:
+          type: integer
+          format: int32
+        noOfInsuranceAccount:
+          type: integer
+          format: int32
+        noOfInvestmentAccount:
+          type: integer
+          format: int32
+        noOfNonSecureLoanAccount:
+          type: integer
+          format: int32
+        noOfSavingsAccount:
+          type: integer
+          format: int32
+        noOfSecureLoanAccount:
+          type: integer
+          format: int32
+        noOfTermDepositAccount:
+          type: integer
+          format: int32
+      xml:
+        namespace: http://dto.spi.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    CustomerAccountsInquiryResponse:
+      type: object
+      properties:
+        ExtensionObject:
+          $ref: '#/components/schemas/BaseResponse'
+      xml:
+        namespace: http://dto.spi.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    CustomerSearchCriteriaSpiDTO:
+      type: object
+      properties:
+        accountId:
+          type: string
+        birthDate:
+          type: string
+        cardNumber:
+          type: string
+        customerId:
+          type: string
+        extAcctNo:
+          type: string
+        firstName:
+          type: string
+        homePhoneNumber:
+          type: string
+        incorporatedDate:
+          type: string
+        lastName:
+          type: string
+        mobileNumber:
+          type: string
+        nationalId:
+          type: string
+        nlsName:
+          type: string
+        shortName:
+          type: string
+      xml:
+        namespace: http://dto.spi.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    ArrayOf_tns13_MIS:
+      type: object
+      properties:
+        item:
+          type: array
+          items:
+            $ref: '#/components/schemas/MIS'
+      xml:
+        namespace: http://dto.spi.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    rootElement_addCustomer:
+      type: object
+      properties:
+        sessionContext:
+          $ref: '#/components/schemas/SessionContext'
+        customerDetailsDTO:
+          $ref: '#/components/schemas/NewIndividualDTO'
+        kycDetails:
+          $ref: '#/components/schemas/KYCDetails'
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_changeCustomerIdentificationDetails:
+      type: object
+      properties:
+        sessionContext:
+          $ref: '#/components/schemas/SessionContext'
+        customerId:
+          type: integer
+          format: int64
+        changeType:
+          type: string
+        customerIC:
+          type: string
+        category:
+          type: string
+        shortName:
+          type: string
+        firstName:
+          type: string
+        midName:
+          type: string
+        lastName:
+          type: string
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_inquireRBAResponse:
+      type: object
+      properties:
+        inquireRBAReturn:
+          $ref: '#/components/schemas/RBACustomerInquiryResponse'
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_inquireGroupWalletCustomerResponse:
+      type: object
+      properties:
+        inquireGroupWalletCustomerReturn:
+          $ref: '#/components/schemas/CustomerGroupWalletInquiryDTO'
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_updateCustomerUDF:
+      type: object
+      properties:
+        sessioncontext:
+          $ref: '#/components/schemas/SessionContext'
+        customerUDFLogDTO:
+          $ref: '#/components/schemas/CustomerUDFLogDTO'
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_addCustomerResponse:
+      type: object
+      properties:
+        addCustomerReturn:
+          $ref: '#/components/schemas/AddCustomerResponse'
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_doDedupCustomerSearch:
+      type: object
+      properties:
+        sessionContext:
+          $ref: '#/components/schemas/SessionContext'
+        custIC:
+          type: string
+        lastName:
+          type: string
+        birthDate:
+          type: string
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_addRBACustomerDetailsResponse:
+      type: object
+      properties:
+        addRBACustomerDetailsReturn:
+          $ref: '#/components/schemas/TransactionStatus'
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_inquireResponse:
+      type: object
+      properties:
+        inquireReturn:
+          $ref: '#/components/schemas/CustomerInquiryResponse'
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_modifyCustomer:
+      type: object
+      properties:
+        sessionContext:
+          $ref: '#/components/schemas/SessionContext'
+        customerMaintenanceDTO:
+          $ref: '#/components/schemas/CustomerMaintenanceDTO'
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_changeCustomerIdentificationDetailsResponse:
+      type: object
+      properties:
+        changeCustomerIdentificationDetailsReturn:
+          $ref: '#/components/schemas/TransactionResponse'
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_listAccountsOfCustomerResponse:
+      type: object
+      properties:
+        listAccountsOfCustomerReturn:
+          $ref: '#/components/schemas/CustomerAccountsInquiryResponse'
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_inquireRBA:
+      type: object
+      properties:
+        sessionContext:
+          $ref: '#/components/schemas/SessionContext'
+        customerId:
+          type: integer
+          format: int64
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_createESaverCustomerResponse:
+      type: object
+      properties:
+        createESaverCustomerReturn:
+          $ref: '#/components/schemas/AddCustomerResponse'
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_createESaverCustomer:
+      type: object
+      properties:
+        sessionContext:
+          $ref: '#/components/schemas/SessionContext'
+        customerDataDTO:
+          $ref: '#/components/schemas/CustomerDataDTO'
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_modifyCustomerResponse:
+      type: object
+      properties:
+        modifyCustomerReturn:
+          $ref: '#/components/schemas/TransactionResponse'
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_listAccountsOfCustomer:
+      type: object
+      properties:
+        sessionContext:
+          $ref: '#/components/schemas/SessionContext'
+        customerId:
+          type: integer
+          format: int64
+        moduleType:
+          type: array
+          items:
+            $ref: '#/components/schemas/TaskModuleType'
+        pageInformation:
+          $ref: '#/components/schemas/PageInformation'
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_doAdvancedCustomerSearch:
+      type: object
+      properties:
+        sessionContext:
+          $ref: '#/components/schemas/SessionContext'
+        customerSearchCriteriaDTO:
+          $ref: '#/components/schemas/CustomerSearchCriteriaSpiDTO'
+        pageInformation:
+          $ref: '#/components/schemas/PageInformation'
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_inquireGroupWalletCustomer:
+      type: object
+      properties:
+        sessionContext:
+          $ref: '#/components/schemas/SessionContext'
+        customerId:
+          type: integer
+          format: int64
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_inquire:
+      type: object
+      properties:
+        sessionContext:
+          $ref: '#/components/schemas/SessionContext'
+        customerId:
+          type: integer
+          format: int64
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_addRBACustomerDetails:
+      type: object
+      properties:
+        sessionContext:
+          $ref: '#/components/schemas/SessionContext'
+        rBACustomerDetailsDTO:
+          $ref: '#/components/schemas/RBACustomerDetailsDTO'
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_doDedupCustomerSearchResponse:
+      type: object
+      properties:
+        doDedupCustomerSearchReturn:
+          $ref: '#/components/schemas/DoDedupCustomerSearchResponse'
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_doAdvancedCustomerSearchResponse:
+      type: object
+      properties:
+        doAdvancedCustomerSearchReturn:
+          $ref: '#/components/schemas/CustomerSearchResponse'
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_fault:
+      $ref: '#/components/schemas/FatalException'
+    rootElement_listCASAAccountsOfCustomerAUSResponse:
+      type: object
+      properties:
+        listCASAAccountsOfCustomerAUSReturn:
+          $ref: '#/components/schemas/CasaAccountsForCustomerInquiryResponse'
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_updateCustomerUDFResponse:
+      type: object
+      properties:
+        updateCustomerUDFReturn:
+          $ref: '#/components/schemas/TransactionResponse'
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_modifyRBACustomerResponse:
+      type: object
+      properties:
+        modifyRBACustomerReturn:
+          $ref: '#/components/schemas/TransactionResponse'
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_modifyRBACustomer:
+      type: object
+      properties:
+        sessionContext:
+          $ref: '#/components/schemas/SessionContext'
+        rbaCustomerMaintenanceDTO:
+          $ref: '#/components/schemas/RBACustomerMaintenanceDTO'
+      xml: {
+        }
+      x-namespace-qualified: false
+    rootElement_listCASAAccountsOfCustomerAUS:
+      type: object
+      properties:
+        sessionContext:
+          $ref: '#/components/schemas/SessionContext'
+        entityCIF:
+          type: integer
+          format: int64
+        ausCIF:
+          type: integer
+          format: int64
+      xml: {
+        }
+      x-namespace-qualified: false
+    UserContext:
+      type: object
+      properties:
+        primaryPassword:
+          type: string
+        userId:
+          type: string
+      xml:
+        namespace: http://context.app.fcr.iflex.com
+      x-namespace-qualified: false
+    AuthorizationReason:
+      type: object
+      properties:
+        comment:
+          type: string
+        reasonCode:
+          type: integer
+          format: int32
+      xml:
+        namespace: http://context.app.fcr.iflex.com
+      x-namespace-qualified: false
+    SessionContext:
+      type: object
+      properties:
+        bankCode:
+          type: integer
+          format: int32
+        channel:
+          type: string
+        externalBatchNumber:
+          type: integer
+          format: int64
+        externalReferenceNo:
+          type: string
+        externalSystemAuditTrailNumber:
+          type: integer
+          format: int64
+        localDateTimeText:
+          type: string
+        originalReferenceNo:
+          type: string
+        overridenWarnings:
+          type: string
+        postingDateText:
+          type: string
+        reason:
+          $ref: '#/components/schemas/AuthorizationReason'
+        serviceCode:
+          type: string
+        sessionTicket:
+          type: string
+        supervisorContext:
+          $ref: '#/components/schemas/UserContext'
+        transactionBranch:
+          type: integer
+          format: int32
+        userId:
+          type: string
+        userReferenceNumber:
+          type: string
+        valueDateText:
+          type: string
+      xml:
+        namespace: http://context.app.fcr.iflex.com
+      x-namespace-qualified: false
+    TransactionStatus:
+      type: object
+      properties:
+        errorCode:
+          type: string
+        extendedReply:
+          $ref: '#/components/schemas/ExtendedReply'
+        externalReferenceNo:
+          type: string
+        inputOverridenWarnings:
+          type: string
+        isOverriden:
+          type: boolean
+        isServiceChargeApplied:
+          type: boolean
+        memo:
+          type: string
+        replyCode:
+          type: integer
+          format: int64
+        replyText:
+          type: string
+        spReturnValue:
+          type: integer
+          format: int64
+        transactionDateTimeText:
+          type: string
+        userReferenceNumber:
+          type: string
+        validationErrors:
+          $ref: '#/components/schemas/ArrayOf_tns8_ValidationError'
+      xml:
+        namespace: http://transaction.entity.fcr.iflex.com
+      x-namespace-qualified: false
+    BaseResponse:
+      type: object
+      properties:
+        status:
+          $ref: '#/components/schemas/TransactionStatus'
+      xml:
+        namespace: http://dto.entity.fcr.iflex.com
+      x-namespace-qualified: false
+    CustomerClassType:
+      type: string
+    EducationType:
+      type: string
+    CustomerStatusType:
+      type: string
+    SexType:
+      type: string
+    RiskLevel:
+      type: string
+    LocalGlobalType:
+      type: string
+    MaritalStatusType:
+      type: string
+    TaskModuleType:
+      type: string
+    RaceType:
+      type: string
+    MISType:
+      type: string
+    EthnicOriginType:
+      type: string
+    CustomerUDFLogDTO:
+      type: object
+      properties:
+        altEmail:
+          type: string
+        customerID:
+          type: integer
+          format: int64
+        prefSent:
+          type: string
+        weightedRiskScore:
+          type: string
+      xml:
+        namespace: http://dto.udf.app.fcr.iflex.com
+      x-namespace-qualified: false
+    ArrayOf_tns8_ValidationError:
+      type: object
+      properties:
+        item:
+          type: array
+          items:
+            $ref: '#/components/schemas/ValidationError'
+      xml:
+        namespace: http://error.validation.infra.fcr.iflex.com
+      x-namespace-qualified: false
+    ValidationError:
+      type: object
+      properties:
+        applicableAttributes:
+          type: string
+        attributeName:
+          type: string
+        attributeValue:
+          type: string
+        errorCode:
+          type: string
+        errorMessage:
+          type: string
+        methodName:
+          type: string
+        objectName:
+          type: string
+      xml:
+        namespace: http://error.validation.infra.fcr.iflex.com
+      x-namespace-qualified: false
+    CustomerProfessionDetailsDTO:
+      type: object
+      properties:
+        code:
+          type: integer
+          format: int32
+        description:
+          type: string
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    CasaAccountsforCustomerDTO:
+      type: object
+      properties:
+        accountId:
+          type: string
+        accountTitle:
+          type: string
+        acyAmount:
+          type: number
+          format: float
+        branchCode:
+          type: integer
+          format: int64
+        branchName:
+          type: string
+        currencyCode:
+          type: integer
+          format: int64
+        currencyShortName:
+          type: string
+        currentStatus:
+          type: integer
+          format: int32
+        currentStatusDescription:
+          type: string
+        customerId:
+          type: string
+        customerRelationship:
+          type: string
+        productCode:
+          type: integer
+          format: int64
+        productName:
+          type: string
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    MonthlyAccountActivityDTO:
+      type: object
+      properties:
+        countOfCashDepositTxns:
+          type: integer
+          format: int32
+        countOfCashWithdrawTxns:
+          type: integer
+          format: int32
+        countOfChequeDepositTxns:
+          type: integer
+          format: int32
+        countOfChequeWithdrawTxns:
+          type: integer
+          format: int32
+        countOfFundsTransferDepositTxns:
+          type: integer
+          format: int32
+        countOfFundsTransferWithdrawTxns:
+          type: integer
+          format: int32
+        countOfOtherInstrumentsDepositTxns:
+          type: integer
+          format: int32
+        countOfOtherInstrumentsWithdrawTxns:
+          type: integer
+          format: int32
+        valueOfCAshDepositTxns:
+          type: number
+          format: float
+        valueOfCashWithdrawTxns:
+          type: number
+          format: float
+        valueOfChequeDepositTxns:
+          type: number
+          format: float
+        valueOfChequeWithdrawTxns:
+          type: number
+          format: float
+        valueOfFundsTransferDepositTxns:
+          type: number
+          format: float
+        valueOfFundsTransferWithdrawTxns:
+          type: number
+          format: float
+        valueOfOtherInstrumentsDepositTxns:
+          type: number
+          format: float
+        valueOfOtherInstrumentsWithdrawTxns:
+          type: number
+          format: float
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    SourceOfWealthDTO:
+      type: object
+      properties:
+        sourceOfWealth1:
+          type: number
+          format: float
+        sourceOfWealth10:
+          type: number
+          format: float
+        sourceOfWealth2:
+          type: number
+          format: float
+        sourceOfWealth3:
+          type: number
+          format: float
+        sourceOfWealth4:
+          type: number
+          format: float
+        sourceOfWealth5:
+          type: number
+          format: float
+        sourceOfWealth6:
+          type: number
+          format: float
+        sourceOfWealth7:
+          type: number
+          format: float
+        sourceOfWealth8:
+          type: number
+          format: float
+        sourceOfWealth9:
+          type: number
+          format: float
+        sourceOfWealthOther:
+          type: string
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    SearchCustomerResultDTO:
+      type: object
+      properties:
+        accountRelationship:
+          type: string
+        address:
+          type: string
+        birthDate:
+          type: string
+        customerStatus:
+          type: string
+        customerType:
+          type: string
+        customerTypeDescription:
+          type: string
+        firstName:
+          type: string
+        fullName:
+          type: string
+        homeBranch:
+          type: string
+        homePhoneNumber:
+          type: string
+        icType:
+          type: string
+        id:
+          type: integer
+          format: int64
+        lastName:
+          type: string
+        memoSeverity:
+          type: string
+        middleName:
+          type: string
+        mobileNumber:
+          type: string
+        nationalIdentificationCode:
+          type: string
+        nlsName:
+          type: string
+        salutation:
+          type: string
+        shortName:
+          type: string
+        classType:
+          $ref: '#/components/schemas/CustomerClassType'
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    BaseCustomerDetailsDTO:
+      type: object
+      properties:
+        acctNo:
+          type: string
+        address:
+          $ref: '#/components/schemas/Address'
+        bankRelation:
+          $ref: '#/components/schemas/CustomerBankRelationship'
+        birthdate:
+          type: string
+        businessCode:
+          type: integer
+          format: int32
+        businessRegno:
+          type: string
+        customerCategory:
+          type: string
+        customerStatus:
+          type: string
+        date:
+          type: string
+        designation:
+          type: string
+        email:
+          type: string
+        ethnicOrigin:
+          type: string
+        fullName:
+          type: string
+        icType:
+          type: string
+        id:
+          type: integer
+          format: int64
+        isCustomerRestricted:
+          type: boolean
+        isStaff:
+          type: boolean
+        language:
+          type: string
+        localGlobalType:
+          $ref: '#/components/schemas/LocalGlobalType'
+        maritalStatusType:
+          type: string
+        membership:
+          $ref: '#/components/schemas/Membership'
+        mobilePhone:
+          type: string
+        name:
+          $ref: '#/components/schemas/Name'
+        nationalIdentificationCode:
+          type: string
+        nationality:
+          type: string
+        phonetic:
+          $ref: '#/components/schemas/Phonetic'
+        prefix:
+          type: string
+        professionCode:
+          type: integer
+          format: int32
+        residence:
+          type: string
+        sex:
+          type: string
+        signatureType:
+          type: string
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    RBACustomerDetailsDTO:
+      type: object
+      properties:
+        RBACustomerCRSDetails:
+          $ref: '#/components/schemas/ArrayOf_tns13_RBACustomerCRSDetails'
+        cntCashDepTxn:
+          type: integer
+          format: int32
+        cntCashWdrTxn:
+          type: integer
+          format: int32
+        cntChqDepTxn:
+          type: integer
+          format: int32
+        cntChqWdrTxn:
+          type: integer
+          format: int32
+        cntFundsTransferDepTxn:
+          type: integer
+          format: int32
+        cntFundsTransferWdrTxn:
+          type: integer
+          format: int32
+        cntOtherInstrumentsDepTxn:
+          type: integer
+          format: int32
+        cntOtherInstrumentsWdrTxn:
+          type: integer
+          format: int32
+        codClassCrs:
+          type: number
+          format: float
+        codClassFatca:
+          type: number
+          format: float
+        codCntryTrdWith1:
+          type: string
+        codCntryTrdWith10:
+          type: string
+        codCntryTrdWith2:
+          type: string
+        codCntryTrdWith3:
+          type: string
+        codCntryTrdWith4:
+          type: string
+        codCntryTrdWith5:
+          type: string
+        codCntryTrdWith6:
+          type: string
+        codCntryTrdWith7:
+          type: string
+        codCntryTrdWith8:
+          type: string
+        codCntryTrdWith9:
+          type: string
+        codCustId:
+          type: string
+        codCustTypSpecl:
+          type: number
+          format: float
+        codRiskActivity:
+          type: number
+          format: float
+        codSrcOfFunds1:
+          type: number
+          format: float
+        codSrcOfFunds10:
+          type: number
+          format: float
+        codSrcOfFunds2:
+          type: number
+          format: float
+        codSrcOfFunds3:
+          type: number
+          format: float
+        codSrcOfFunds4:
+          type: number
+          format: float
+        codSrcOfFunds5:
+          type: number
+          format: float
+        codSrcOfFunds6:
+          type: number
+          format: float
+        codSrcOfFunds7:
+          type: number
+          format: float
+        codSrcOfFunds8:
+          type: number
+          format: float
+        codSrcOfFunds9:
+          type: number
+          format: float
+        codSrcOfIncome1:
+          type: number
+          format: float
+        codSrcOfIncome10:
+          type: number
+          format: float
+        codSrcOfIncome2:
+          type: number
+          format: float
+        codSrcOfIncome3:
+          type: number
+          format: float
+        codSrcOfIncome4:
+          type: number
+          format: float
+        codSrcOfIncome5:
+          type: number
+          format: float
+        codSrcOfIncome6:
+          type: number
+          format: float
+        codSrcOfIncome7:
+          type: number
+          format: float
+        codSrcOfIncome8:
+          type: number
+          format: float
+        codSrcOfIncome9:
+          type: number
+          format: float
+        codSrcOfWealth1:
+          type: number
+          format: float
+        codSrcOfWealth10:
+          type: number
+          format: float
+        codSrcOfWealth2:
+          type: number
+          format: float
+        codSrcOfWealth3:
+          type: number
+          format: float
+        codSrcOfWealth4:
+          type: number
+          format: float
+        codSrcOfWealth5:
+          type: number
+          format: float
+        codSrcOfWealth6:
+          type: number
+          format: float
+        codSrcOfWealth7:
+          type: number
+          format: float
+        codSrcOfWealth8:
+          type: number
+          format: float
+        codSrcOfWealth9:
+          type: number
+          format: float
+        flgPep:
+          type: string
+        giinCrs:
+          type: string
+        isoCntryTaxResiCrs:
+          type: string
+        onboardingChnl:
+          type: number
+          format: float
+        reasonCrs:
+          type: string
+        srcOfFundsOther:
+          type: string
+        srcOfIncomeOther:
+          type: string
+        srcOfWealthOther:
+          type: string
+        tinCrs:
+          type: string
+        valCashDepTxn:
+          type: number
+          format: float
+        valCashWdrTxn:
+          type: number
+          format: float
+        valChqDepTxn:
+          type: number
+          format: float
+        valChqWdrTxn:
+          type: number
+          format: float
+        valFundsTransferDepTxn:
+          type: number
+          format: float
+        valFundsTransferWdrTxn:
+          type: number
+          format: float
+        valOtherInstrumentsDepTxn:
+          type: number
+          format: float
+        valOtherInstrumentsWdrTxn:
+          type: number
+          format: float
+        flgRelatedParty:
+          type: string
+        eCASARefNo:
+          type: integer
+          format: int64
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    RbaCRSControlDetailsDTO:
+      type: object
+      properties:
+        city:
+          type: string
+        country:
+          type: string
+        customerId:
+          type: integer
+          format: int64
+        dateOfBirth:
+          type: string
+          format: date
+        firstName:
+          type: string
+        lastName:
+          type: string
+        personType:
+          type: number
+          format: float
+        taxIdCountry:
+          type: string
+        taxIdNumber:
+          type: string
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    ArrayOf_tns3_RbaCRSControlDetailsDTO:
+      type: object
+      properties:
+        item:
+          type: array
+          items:
+            $ref: '#/components/schemas/RbaCRSControlDetailsDTO'
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    RBACustDetailsDTO:
+      type: object
+      properties:
+        classCRS:
+          type: number
+          format: float
+        classFATCA:
+          type: number
+          format: float
+        customerId:
+          type: integer
+          format: int64
+        flagPEP:
+          type: string
+        giinCRS:
+          type: string
+        isoCountryTaxResiCRS:
+          type: string
+        lastRefreshDate:
+          type: string
+          format: date
+        nextRefreshDate:
+          type: string
+          format: date
+        onboardingChannel:
+          type: number
+          format: float
+        reasonCRS:
+          type: string
+        riskActivity:
+          type: number
+          format: float
+        specialCustomerType:
+          type: number
+          format: float
+        tinCRS:
+          type: string
+        tradedCountry1:
+          type: string
+        tradedCountry10:
+          type: string
+        tradedCountry2:
+          type: string
+        tradedCountry3:
+          type: string
+        tradedCountry4:
+          type: string
+        tradedCountry5:
+          type: string
+        tradedCountry6:
+          type: string
+        tradedCountry7:
+          type: string
+        tradedCountry8:
+          type: string
+        tradedCountry9:
+          type: string
+        flgRelatedParty:
+          type: string
+        eCASArefNo:
+          type: number
+          format: float
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    CorporateCustomerInformationDTO:
+      type: object
+      properties:
+        businessRegistrationNumber:
+          type: string
+        businessType:
+          type: integer
+          format: int32
+        dateIncorporated:
+          type: string
+        signatories:
+          $ref: '#/components/schemas/ArrayOf_tns9_Signatory'
+        versionTicket:
+          type: string
+        contactPersonDesignation:
+          type: string
+        contactPersonName:
+          type: string
+        misCompCode1:
+          type: string
+        misCompCode10:
+          type: string
+        misCompCode2:
+          type: string
+        misCompCode3:
+          type: string
+        misCompCode4:
+          type: string
+        misCompCode5:
+          type: string
+        misCompCode6:
+          type: string
+        misCompCode7:
+          type: string
+        misCompCode8:
+          type: string
+        misCompCode9:
+          type: string
+        misCustCode1:
+          type: string
+        misCustCode10:
+          type: string
+        misCustCode2:
+          type: string
+        misCustCode3:
+          type: string
+        misCustCode4:
+          type: string
+        misCustCode5:
+          type: string
+        misCustCode6:
+          type: string
+        misCustCode7:
+          type: string
+        misCustCode8:
+          type: string
+        misCustCode9:
+          type: string
+        natureOfBusiness:
+          type: string
+        placeOfIncorporation:
+          type: string
+        incomeTaxNo:
+          type: string
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    CustomerDetailsDTO:
+      type: object
+      properties:
+        ExtensionObject:
+          $ref: '#/components/schemas/BaseCustomerDetailsDTO'
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    RBASourceOfFunds:
+      type: object
+      properties:
+        sourceOfFund1:
+          type: number
+          format: float
+        sourceOfFund10:
+          type: number
+          format: float
+        sourceOfFund2:
+          type: number
+          format: float
+        sourceOfFund3:
+          type: number
+          format: float
+        sourceOfFund4:
+          type: number
+          format: float
+        sourceOfFund5:
+          type: number
+          format: float
+        sourceOfFund6:
+          type: number
+          format: float
+        sourceOfFund7:
+          type: number
+          format: float
+        sourceOfFund8:
+          type: number
+          format: float
+        sourceOfFund9:
+          type: number
+          format: float
+        sourceOfFundOther:
+          type: string
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    IndividualCustomerInformationDTO:
+      type: object
+      properties:
+        birthdate:
+          type: string
+        customerIncomeDetails:
+          $ref: '#/components/schemas/CustomerIncomeDetailsDTO'
+        customerProfessionDetails:
+          $ref: '#/components/schemas/CustomerProfessionDetailsDTO'
+        customerStatus:
+          type: string
+        ethnicOrigin:
+          type: string
+        guardianType:
+          type: string
+        introducerId:
+          type: integer
+          format: int64
+        isMinor:
+          type: boolean
+        kycDetailsDTO:
+          $ref: '#/components/schemas/KYCDetailsDTO'
+        maritalStatusType:
+          type: string
+        misCompCode1:
+          type: string
+        misCompCode10:
+          type: string
+        misCompCode2:
+          type: string
+        misCompCode3:
+          type: string
+        misCompCode4:
+          type: string
+        misCompCode5:
+          type: string
+        misCompCode6:
+          type: string
+        misCompCode7:
+          type: string
+        misCompCode8:
+          type: string
+        misCompCode9:
+          type: string
+        misCustCode1:
+          type: string
+        misCustCode10:
+          type: string
+        misCustCode2:
+          type: string
+        misCustCode3:
+          type: string
+        misCustCode4:
+          type: string
+        misCustCode5:
+          type: string
+        misCustCode6:
+          type: string
+        misCustCode7:
+          type: string
+        misCustCode8:
+          type: string
+        misCustCode9:
+          type: string
+        nationality:
+          type: string
+        numberOfSpouses:
+          type: integer
+          format: int32
+        residence:
+          type: string
+        sex:
+          type: string
+        signatureType:
+          type: string
+        versionTicket:
+          type: string
+        incomeTaxNo:
+          type: string
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    AccountDetailsforCustomerDTO:
+      type: object
+      properties:
+        accountId:
+          type: string
+        accountTitle:
+          type: string
+        acyAmount:
+          type: number
+          format: float
+        balanceBook:
+          type: number
+          format: float
+        billAmount:
+          type: number
+          format: float
+        branchCode:
+          type: integer
+          format: int32
+        branchName:
+          type: string
+        classification:
+          type: string
+        codGroupId:
+          type: string
+        ctrLoanTerm:
+          type: number
+          format: float
+        currencyCode:
+          type: integer
+          format: int32
+        currencyShortName:
+          type: string
+        currentStatus:
+          type: string
+        currentStatusDescription:
+          type: string
+        customerRelationship:
+          type: string
+        datBooking:
+          $ref: '#/components/schemas/Date'
+        datMaturity:
+          $ref: '#/components/schemas/Date'
+        depositNo:
+          type: integer
+          format: int64
+        emiAmount:
+          type: number
+          format: float
+        emiDate:
+          $ref: '#/components/schemas/Date'
+        externalAccountId:
+          type: string
+        flgRepaymentMode:
+          type: string
+        futureDatedAmount:
+          type: number
+          format: float
+        hasChequeBookFacility:
+          type: boolean
+        interestRate:
+          type: number
+          format: float
+        lcyAmount:
+          type: number
+          format: float
+        loanApplicationNumber:
+          type: string
+        moduleCode:
+          type: string
+        netBanking:
+          type: boolean
+        nextAmt:
+          type: number
+          format: float
+        originalBalance:
+          type: number
+          format: float
+        originalDepositNo:
+          type: integer
+          format: int32
+        overdraftLimit:
+          type: number
+          format: float
+        pledgeAmount:
+          type: number
+          format: float
+        pledgeIndicator:
+          type: string
+        princAmt:
+          type: number
+          format: float
+        productCode:
+          type: string
+        productName:
+          type: string
+        reason:
+          type: string
+        safeDepositBoxId:
+          type: integer
+          format: int32
+        tdTenor:
+          type: string
+        totalAcyAmount:
+          type: number
+          format: float
+        totalLcyAmount:
+          type: number
+          format: float
+        unclearFunds:
+          type: number
+          format: float
+        applicantName:
+          type: string
+        beneficiaryName:
+          type: string
+        characteristics:
+          type: string
+        draweeName:
+          type: string
+        drawerName:
+          type: string
+        negativeTolerance:
+          type: number
+          format: float
+        ourLCReference:
+          type: string
+        positiveTolerance:
+          type: number
+          format: float
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    RBASourceOfIncomeDTO:
+      type: object
+      properties:
+        sourceOfIncome1:
+          type: number
+          format: float
+        sourceOfIncome10:
+          type: number
+          format: float
+        sourceOfIncome2:
+          type: number
+          format: float
+        sourceOfIncome3:
+          type: number
+          format: float
+        sourceOfIncome4:
+          type: number
+          format: float
+        sourceOfIncome5:
+          type: number
+          format: float
+        sourceOfIncome6:
+          type: number
+          format: float
+        sourceOfIncome7:
+          type: number
+          format: float
+        sourceOfIncome8:
+          type: number
+          format: float
+        sourceOfIncome9:
+          type: number
+          format: float
+        sourceOfIncomeOther:
+          type: string
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    ArrayOf_tns3_SearchCustomerResultDTO:
+      type: object
+      properties:
+        item:
+          type: array
+          items:
+            $ref: '#/components/schemas/SearchCustomerResultDTO'
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    ArrayOf_tns3_CasaAccountsforCustomerDTO:
+      type: object
+      properties:
+        item:
+          type: array
+          items:
+            $ref: '#/components/schemas/CasaAccountsforCustomerDTO'
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    CustomerInquiryResponse:
+      type: object
+      properties:
+        ExtensionObject:
+          $ref: '#/components/schemas/BaseResponse'
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    ArrayOf_tns3_AccountDetailsforCustomerDTO:
+      type: object
+      properties:
+        item:
+          type: array
+          items:
+            $ref: '#/components/schemas/AccountDetailsforCustomerDTO'
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    CustomerIncomeDetailsDTO:
+      type: object
+      properties:
+        code:
+          type: string
+        lowerLimitAmt:
+          type: number
+          format: double
+        upperLimitAmt:
+          type: number
+          format: double
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    KYCDetailsDTO:
+      type: object
+      properties:
+        liabilityKYCFlag:
+          type: boolean
+        manualKYCFlag:
+          type: boolean
+        riskLevel:
+          $ref: '#/components/schemas/RiskLevel'
+        systemKYCFlag:
+          type: boolean
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    NewIndividualDtlsDTO:
+      type: object
+      properties:
+        ageOfRetirement:
+          type: integer
+          format: int32
+        amlRiskRating:
+          type: string
+        brnIssue:
+          type: string
+        customerEducation:
+          type: string
+        datCIV:
+          type: string
+        datIssueId:
+          type: string
+        employeeId:
+          type: string
+        employerAddress:
+          $ref: '#/components/schemas/Address'
+        employerEmailId:
+          type: string
+        employerFaxNo:
+          type: string
+        employerMobileNo:
+          type: string
+        employerName:
+          type: string
+        employerTelex:
+          type: string
+        flgInterTransaction:
+          type: string
+        flgPep:
+          type: string
+        issueAuthId:
+          type: string
+        noOfYearsInJob:
+          type: integer
+          format: int32
+        officePhoneNo:
+          type: string
+        placeOfBirth:
+          type: string
+        sourceOfFunds:
+          type: string
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    CasaAccountsForCustomerInquiryResponse:
+      type: object
+      properties:
+        ExtensionObject:
+          $ref: '#/components/schemas/BaseResponse'
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    RBACustomerInquiryResponse:
+      type: object
+      properties:
+        ExtensionObject:
+          $ref: '#/components/schemas/BaseResponse'
+      xml:
+        namespace: http://dto.customer.app.fcr.iflex.com
+      x-namespace-qualified: false
+    ResponseCodeType:
+      type: string
+    ReplyMessageType:
+      type: string
+    ArrayOf_tns10_Phone:
+      type: object
+      properties:
+        item:
+          type: array
+          items:
+            $ref: '#/components/schemas/Phone'
+      xml:
+        namespace: http://datatype.fcr.iflex.com
+      x-namespace-qualified: false
+    Name:
+      type: object
+      properties:
+        firstName:
+          type: string
+        formattedFullName:
+          type: string
+        fullName:
+          type: string
+        lastName:
+          type: string
+        midName:
+          type: string
+        prefix:
+          type: string
+        shortName:
+          type: string
+      xml:
+        namespace: http://datatype.fcr.iflex.com
+      x-namespace-qualified: false
+    Date:
+      type: object
+      properties:
+        monthDate:
+          type: integer
+          format: int32
+        monthDateTime:
+          type: integer
+          format: int64
+        mutable:
+          type: boolean
+        time:
+          type: integer
+          format: int64
+        timestamp:
+          type: string
+          format: date-time
+        year:
+          type: integer
+          format: int32
+        yearMonthDate:
+          type: integer
+          format: int64
+      xml:
+        namespace: http://datatype.fcr.iflex.com
+      x-namespace-qualified: false
+    Phone:
+      type: object
+      properties:
+        extension:
+          type: string
+        isdCode:
+          type: string
+        number:
+          type: string
+        stdCode:
+          type: string
+      xml:
+        namespace: http://datatype.fcr.iflex.com
+      x-namespace-qualified: false
+    Address:
+      type: object
+      properties:
+        city:
+          type: string
+        country:
+          type: string
+        line1:
+          type: string
+        line2:
+          type: string
+        line3:
+          type: string
+        state:
+          type: string
+        zip:
+          type: string
+      xml:
+        namespace: http://datatype.fcr.iflex.com
+      x-namespace-qualified: false
+    PageInformation:
+      type: object
+      properties:
+        pageNumber:
+          type: integer
+          format: int32
+        pageSize:
+          type: integer
+          format: int32
+      xml:
+        namespace: http://orm.das.infra.fcr.iflex.com
+      x-namespace-qualified: false
